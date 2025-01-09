@@ -1,0 +1,42 @@
+
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23.85px;
+}
+nav {
+    width: 483px;
+    height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+
+    &--4{
+        border: 1px solid black ;
+        font-weight: 700;
+        border-radius: 7px;
+        padding: 10px;
+    }
+}
