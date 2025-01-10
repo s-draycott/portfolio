@@ -1,5 +1,4 @@
 $mobile: 390px;
-$desktop: 1728px;
 
 // GENERAL STYLING
 * {
@@ -13,7 +12,6 @@ h2 {
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 20px;
-
     @media only screen and (min-width: ($mobile + 1px)) {
         font-size: 48px;
     }
@@ -25,6 +23,11 @@ p {
     line-height: 25.6px;
     margin-top: 40px;
     margin-bottom: 40px;
+    font-size: 16px;
+    @media only screen and (min-width: ($mobile + 1px)) {
+            font-size: 18px;
+        }
+
 }
 
 // HEADER SECTION
@@ -73,6 +76,7 @@ nav {
     }
 }
 
+// INTRO SECTION
 h1 {
     font-size: 80px;
     font-weight: 400;
@@ -83,7 +87,7 @@ h1 {
 }
 
 .intro {
-    margin: 50px 23px; 
+    margin: auto; 
     @media only screen and (min-width: ($mobile + 1px)){
         height: 375 px;
         width: 1346px;
@@ -102,61 +106,80 @@ h1 {
 }
 
 //ABOUT ME SECTION
-.about-me {
+.about {
     display:flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    margin-left: 30px;
-    @media only screen and (min-width: ($mobile + 1px)){
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-.about-para {
+    margin: auto;
     @media only screen and (min-width: ($mobile + 1px)){
         display: flex;
-        flex-wrap: wrap;
-    }
-}
+        flex-direction: column;
+        height: 500px;
+        width:1200px
 
-
-.img-container {
-    display: flex;
-    place-content: center;
-    @media only screen and (min-width: ($mobile + 1px)){
-        place-content: flex-end;
     }
-}
+    &--heading{
+        order: 1;
+        width: 800px;
+        height: 60px;
+    }
+    &--para{
+        order: 3;
+        @media only screen and (min-width: ($mobile + 1px)) {
+            order: 2;    
+            width: 800px;
+            flex: 1;
+        }
+    }
+    &--img {
+        display: flex;
+        place-content: center;
+        order: 2;
+        @media only screen and (min-width: ($mobile + 1px)) {
+            place-content: center;
+            order: 3;
+            width:330px;
+            }
+        }
+    }
 
 .profile-img {
     max-height: 401.4px;
     @media only screen and (min-width: ($mobile + 1px)){
         height: 558px;
-        
-}
+    }
 }
 
 //SKILLS SECTION
+.skills {
+    text-align: center;
+}
 .skill-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     @media only screen and (min-width: ($mobile + 1px)){
         justify-content: space-around;
-        margin-left: 200px;
-        margin-right: 200px;
+        margin-left: 400px;
+        margin-right: 400px;
     }
 }
 .icon {
     height: 67px;
 }
-figcaption{
+.icon-caption{
     display: flex;
     justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
 }
 
 // PORTFOLIO SECTION
+.portfolio{
+    text-align: center;
+    margin-top: 80px;
+}
 .project {
     height: 165px;
     width: 250px;
@@ -200,8 +223,7 @@ h3 {
 }
 .contact-link {
     color: black;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 18px;
     border: 2px solid black;
     text-decoration: none;
