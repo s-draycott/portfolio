@@ -1,6 +1,7 @@
 $mobile: 390px;
 $desktop: 1728px;
 
+// GENERAL STYLING
 * {
     font-family: "Cormorant", serif;
     font-optical-sizing: auto;
@@ -8,6 +9,25 @@ $desktop: 1728px;
     font-style: normal;
 }
 
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 20px;
+
+    @media only screen and (min-width: ($mobile + 1px)) {
+        font-size: 48px;
+    }
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 25.6px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+// HEADER SECTION
 header {
     display: flex;
     place-content: center;
@@ -62,23 +82,6 @@ h1 {
     }
 }
 
-h2 {
-    font-weight: 700;
-    font-size: 32px;
-    margin-bottom: 40px;
-    @media only screen and (min-width: ($mobile + 1px)){
-        font-size: 48px;
-    }
-}
-
-p {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    line-height: 25.6px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
 .intro {
     margin: 50px 23px; 
     @media only screen and (min-width: ($mobile + 1px)){
@@ -98,8 +101,9 @@ p {
     }  
 }
 
-.about-me{
-    display: flex;
+//ABOUT ME SECTION
+.about-me {
+    display:flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin-left: 30px;
@@ -109,7 +113,15 @@ p {
     }
 }
 
-.img-container{
+.about-para {
+    @media only screen and (min-width: ($mobile + 1px)){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+.img-container {
     display: flex;
     place-content: center;
     @media only screen and (min-width: ($mobile + 1px)){
@@ -117,10 +129,104 @@ p {
     }
 }
 
-.profile-img{
+.profile-img {
     max-height: 401.4px;
     @media only screen and (min-width: ($mobile + 1px)){
         height: 558px;
         
 }
+}
+
+//SKILLS SECTION
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    @media only screen and (min-width: ($mobile + 1px)){
+        justify-content: space-around;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+.icon {
+    height: 67px;
+}
+figcaption{
+    display: flex;
+    justify-content: center;
+}
+
+// PORTFOLIO SECTION
+.project {
+    height: 165px;
+    width: 250px;
+    font-size: 32px;
+}
+.project-container{
+    display: grid;
+    place-content: center;
+    @media only screen and (min-width: ($mobile + 1px)){
+        display: flex;
+        justify-content: center;
+    }
+}
+.proj-caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.eye-icon{
+    height:20px;
+}
+.code-icon{
+    height:20px;
+}
+
+// CONTACT SECTION
+h3 {
+    font-size: 80px;
+    line-height: 96px;
+    text-align: center;
+    @media only screen and (min-width: ($mobile + 1px)) {
+        font-size: 128;
+        line-height: 153px;   
+    }
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-link {
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-bottom: 80px;
+    @media only screen and (min-width: ($mobile + 1px)) {
+            font-size: 24px;
+            padding: 10px 80px;
+            
+        }
+}
+
+// FOOTER SECTION
+footer {
+    background-color: black;
+    height: 114px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (min-width: ($mobile + 1px)){
+        justify-content: flex-end;
+    }
+}
+
+.footer-img {
+    height: 55px;
+    margin: 10px;
 }
