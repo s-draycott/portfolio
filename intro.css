@@ -1,5 +1,5 @@
 * {
-  font-family: "Inter", sans-serif;
+  font-family: "Cormorant", serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
@@ -7,35 +7,135 @@
 
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  place-content: center;
+}
+@media only screen and (min-width: 391px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-h1 {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
+.name-header {
+  font-family: "Cormorant", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 23.85px;
+  font-size: 24px;
+}
+@media only screen and (min-width: 391px) {
+  .name-header {
+    font-size: 48px;
+  }
 }
 
 nav {
-  width: 483px;
-  height: 45px;
-  display: flex;
-  justify-content: space-evenly;
+  display: none;
+}
+@media only screen and (min-width: 391px) {
+  nav {
+    width: 483px;
+    height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 .nav {
   font-family: "Inter", sans-serif;
-  font-size: 18px;
-  text-decoration: none;
   color: black;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
   padding: 10px;
 }
-.nav--4 {
-  border: 1px solid black;
+.nav--3 {
+  border: 1px solid slategray;
   font-weight: 700;
   border-radius: 7px;
   padding: 10px;
 }
+
+h1 {
+  font-size: 80px;
+  font-weight: 400;
+}
+@media only screen and (min-width: 391px) {
+  h1 {
+    font-size: 128px;
+    margin: 0px;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 391px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 25.6px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.intro {
+  margin: 50px 23px;
+}
+@media only screen and (min-width: 391px) {
+  .intro {
+    height: 375 px;
+    width: 1346px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .intro--p1 {
+    height: 128px;
+    width: 615px;
+    margin-left: 0px;
+  }
+}
+
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 30px;
+}
+@media only screen and (min-width: 391px) {
+  .about-me {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.img-container {
+  display: flex;
+  place-content: center;
+}
+@media only screen and (min-width: 391px) {
+  .img-container {
+    place-content: flex-end;
+  }
+}
+
+.profile-img {
+  max-height: 401.4px;
+}
+@media only screen and (min-width: 391px) {
+  .profile-img {
+    height: 558px;
+  }
+}
+
+/*# sourceMappingURL=intro.css.map */
