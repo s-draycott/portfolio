@@ -1,0 +1,257 @@
+* {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 391px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 25.6px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+@media only screen and (min-width: 391px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+.banner {
+  display: flex;
+  place-content: center;
+}
+@media only screen and (min-width: 391px) {
+  .banner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.banner__name {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+}
+@media only screen and (min-width: 391px) {
+  .banner__name {
+    font-size: 48px;
+  }
+}
+.banner__nav {
+  display: none;
+}
+@media only screen and (min-width: 391px) {
+  .banner__nav {
+    width: 483px;
+    height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.banner__navbtn {
+  font-family: "Inter", sans-serif;
+  color: black;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.intro {
+  margin: auto;
+}
+.intro__header {
+  font-size: 80px;
+  font-weight: 400;
+}
+@media only screen and (min-width: 391px) {
+  .intro__header {
+    font-size: 128px;
+    margin: 0px;
+  }
+}
+@media only screen and (min-width: 391px) {
+  .intro {
+    height: 375 px;
+    width: 1346px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .intro--p1 {
+    height: 128px;
+    width: 615px;
+    margin-left: 0px;
+  }
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+@media only screen and (min-width: 391px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 1200px;
+  }
+}
+.about__heading {
+  order: 1;
+  width: 800px;
+  height: 60px;
+}
+.about__para {
+  order: 3;
+}
+@media only screen and (min-width: 391px) {
+  .about__para {
+    order: 2;
+    width: 800px;
+    flex: 1;
+  }
+}
+.about__img {
+  display: flex;
+  place-content: center;
+  order: 2;
+}
+@media only screen and (min-width: 391px) {
+  .about__img {
+    place-content: center;
+    order: 3;
+    width: 330px;
+  }
+}
+.about__prof-img {
+  max-height: 401.4px;
+}
+@media only screen and (min-width: 391px) {
+  .about__prof-img {
+    height: 558px;
+  }
+}
+
+.skills {
+  text-align: center;
+}
+.skills__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media only screen and (min-width: 391px) {
+  .skills__icons {
+    justify-content: space-around;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+.skills__icons__icon {
+  height: 67px;
+}
+.skills__icons__cptn {
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.portfolio {
+  text-align: center;
+  margin-top: 80px;
+}
+.portfolio__container {
+  display: grid;
+  place-content: center;
+}
+@media only screen and (min-width: 391px) {
+  .portfolio__container {
+    display: flex;
+    justify-content: center;
+  }
+}
+.portfolio__container__img {
+  height: 165px;
+  width: 250px;
+  font-size: 32px;
+}
+.portfolio__container__cptn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 28px;
+}
+.portfolio__container__icon {
+  height: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__header {
+  font-size: 80px;
+  line-height: 96px;
+  text-align: center;
+}
+@media only screen and (min-width: 391px) {
+  .contact__header {
+    font-size: 128;
+    line-height: 153px;
+  }
+}
+.contact__link {
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-bottom: 80px;
+}
+@media only screen and (min-width: 391px) {
+  .contact__link {
+    font-size: 24px;
+    padding: 10px 80px;
+  }
+}
+
+.footer {
+  background-color: black;
+  height: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 391px) {
+  .footer {
+    justify-content: flex-end;
+  }
+}
+.footer__img {
+  height: 55px;
+  margin: 10px;
+}
