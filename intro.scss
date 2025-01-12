@@ -1,6 +1,5 @@
 $mobile: 390px;
 
-// GENERAL STYLING
 * {
     font-family: "Cormorant", serif;
     font-optical-sizing: auto;
@@ -25,69 +24,55 @@ p {
     margin-bottom: 40px;
     font-size: 16px;
     @media only screen and (min-width: ($mobile + 1px)) {
-            font-size: 18px;
-        }
-
+        font-size: 18px;
+    }
 }
 
-// HEADER SECTION
-header {
+.banner {
     display: flex;
     place-content: center;
     @media only screen and (min-width: ($mobile + 1px)) {
-            display: flex;
-            justify-content: space-between;
-    }
-}
-
-.name-header {
-    font-family: "Cormorant", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 24px;
-    @media only screen and (min-width: ($mobile + 1px)) {
-        font-size: 48px;
-    }
-}
-
-nav {
-    display:none;
-    @media only screen and (min-width: ($mobile + 1px)) {
-        width: 483px;
-        height: 45px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
-}
-
-.nav {
-    font-family: "Inter", sans-serif;
-    color: black;
-    font-weight: 400;
-    font-size: 20px;
-    text-decoration: none;
-    padding: 10px;
-
-    &--3 {
-        border: 1px solid slategray;
+    &__name {
+        font-family: "Cormorant", serif;
         font-weight: 700;
-        border-radius: 7px;
-        padding: 10px;
+        font-style: normal;
+        font-size: 24px;
+        @media only screen and (min-width: ($mobile + 1px)) {
+            font-size: 48px;
+        }
     }
-}
-
-// INTRO SECTION
-h1 {
-    font-size: 80px;
-    font-weight: 400;
-    @media only screen and (min-width: ($mobile + 1px)){
-        font-size: 128px;
-        margin: 0px;
+    &__nav {
+        display: none;
+        @media only screen and (min-width: ($mobile + 1px)) {
+            width: 483px;
+            height: 45px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+    &__navbtn {
+        font-family: "Inter", sans-serif;
+        color: black;
+        font-weight: 400;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 10px;
     }
 }
 
 .intro {
     margin: auto; 
+    &__header {
+        font-size: 80px;
+        font-weight: 400;
+        @media only screen and (min-width: ($mobile + 1px)) {
+            font-size: 128px;
+            margin: 0px;
+        }
+    }
     @media only screen and (min-width: ($mobile + 1px)){
         height: 375 px;
         width: 1346px;
@@ -105,7 +90,6 @@ h1 {
     }  
 }
 
-//ABOUT ME SECTION
 .about {
     display:flex;
     flex-wrap: wrap;
@@ -115,14 +99,13 @@ h1 {
         flex-direction: column;
         height: 500px;
         width:1200px
-
     }
-    &--heading{
+    &__heading{
         order: 1;
         width: 800px;
         height: 60px;
     }
-    &--para{
+    &__para{
         order: 3;
         @media only screen and (min-width: ($mobile + 1px)) {
             order: 2;    
@@ -130,7 +113,7 @@ h1 {
             flex: 1;
         }
     }
-    &--img {
+    &__img {
         display: flex;
         place-content: center;
         order: 2;
@@ -138,106 +121,97 @@ h1 {
             place-content: center;
             order: 3;
             width:330px;
-            }
         }
     }
-
-.profile-img {
-    max-height: 401.4px;
-    @media only screen and (min-width: ($mobile + 1px)){
-        height: 558px;
+    &__prof-img {
+        max-height: 401.4px;
+        @media only screen and (min-width: ($mobile + 1px)) {
+            height: 558px;
+        }
     }
 }
 
-//SKILLS SECTION
 .skills {
     text-align: center;
-}
-.skill-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    @media only screen and (min-width: ($mobile + 1px)){
-        justify-content: space-around;
-        margin-left: 400px;
-        margin-right: 400px;
+    &__icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        @media only screen and (min-width: ($mobile + 1px)) {
+            justify-content: space-around;
+            margin-left: 300px;
+            margin-right: 300px;
+        }
+        &__icon {
+            height: 67px;
+        }
+        &__cptn {
+            display: flex;
+            justify-content: center;
+            font-family: "Inter", sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
     }
 }
-.icon {
-    height: 67px;
-}
-.icon-caption{
-    display: flex;
-    justify-content: center;
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 20px;
-}
 
-// PORTFOLIO SECTION
-.portfolio{
+.portfolio {
     text-align: center;
     margin-top: 80px;
-}
-.project {
-    height: 165px;
-    width: 250px;
-    font-size: 32px;
-}
-.project-container{
-    display: grid;
-    place-content: center;
-    @media only screen and (min-width: ($mobile + 1px)){
-        display: flex;
-        justify-content: center;
+    &__container{
+        display: grid;
+        place-content: center;
+        @media only screen and (min-width: ($mobile + 1px)) {
+            display: flex;
+            justify-content: center;
+        }
+        &__img{
+            height: 165px;
+                width: 250px;
+                font-size: 32px;
+        }
+        &__cptn {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 28px;
+        }
+        &__icon {
+            height: 20px;
+        }
     }
 }
-.proj-caption {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
-.eye-icon{
-    height:20px;
-}
-.code-icon{
-    height:20px;
-}
-
-// CONTACT SECTION
-h3 {
-    font-size: 80px;
-    line-height: 96px;
-    text-align: center;
-    @media only screen and (min-width: ($mobile + 1px)) {
-        font-size: 128;
-        line-height: 153px;   
-    }
-}
 .contact{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.contact-link {
-    color: black;
-    font-weight: 700;
-    font-size: 18px;
-    border: 2px solid black;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-bottom: 80px;
-    @media only screen and (min-width: ($mobile + 1px)) {
+    &__header {
+    font-size: 80px;
+        line-height: 96px;
+        text-align: center;
+        @media only screen and (min-width: ($mobile + 1px)) {
+            font-size: 128;
+            line-height: 153px;
+        }
+    }
+    &__link {
+        color: black;
+        font-weight: 700;
+        font-size: 18px;
+        border: 2px solid black;
+        text-decoration: none;
+        padding: 10px 30px;
+        margin-bottom: 80px;
+        @media only screen and (min-width: ($mobile + 1px)) {
             font-size: 24px;
             padding: 10px 80px;
-            
         }
+    }
 }
 
-// FOOTER SECTION
-footer {
+.footer {
     background-color: black;
     height: 114px;
     display: flex;
@@ -246,9 +220,8 @@ footer {
     @media only screen and (min-width: ($mobile + 1px)){
         justify-content: flex-end;
     }
-}
-
-.footer-img {
-    height: 55px;
-    margin: 10px;
+    &__img {
+        height: 55px;
+        margin: 10px;
+    }
 }
