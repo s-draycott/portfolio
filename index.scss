@@ -110,7 +110,7 @@ p {
         @media only screen and (min-width: ($mobile + 1px)) {
             order: 2;    
             width: 800px;
-            flex: 1;
+            // flex: 1;
         }
     }
     &__img {
