@@ -1,4 +1,4 @@
-$mobile: 390px;
+$mobile: 430px;
 
 * {
     font-family: "Cormorant", serif;
@@ -7,12 +7,16 @@ $mobile: 390px;
     font-style: normal;
 }
 
+body {
+    margin: 0px;
+}
+
 h2 {
-    font-weight: 700;
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: calc(3vh + 3vw);
+    margin: 10px;
     @media only screen and (min-width: ($mobile + 1px)) {
-        font-size: 48px;
+        font-size: calc(2vh + 2vw);
     }
 }
 
@@ -20,9 +24,9 @@ p {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     line-height: 25.6px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 10px;
     font-size: 16px;
+    padding: 10px;
     @media only screen and (min-width: ($mobile + 1px)) {
         font-size: 18px;
     }
@@ -31,15 +35,19 @@ p {
 .banner {
     display: flex;
     place-content: center;
+    background-image: url(./content/backgroundskills2.jpg);
+    color: white;
+    padding: 10px;
     @media only screen and (min-width: ($mobile + 1px)) {
         display: flex;
         justify-content: space-between;
     }
     &__name {
         font-family: "Cormorant", serif;
-        font-weight: 700;
+        font-weight: 200;
         font-style: normal;
         font-size: 24px;
+        padding: 10px;
         @media only screen and (min-width: ($mobile + 1px)) {
             font-size: 48px;
         }
@@ -47,45 +55,43 @@ p {
     &__nav {
         display: none;
         @media only screen and (min-width: ($mobile + 1px)) {
-            width: 483px;
-            height: 45px;
             display: flex;
             justify-content: space-evenly;
         }
     }
     &__navbtn {
         font-family: "Inter", sans-serif;
-        color: black;
+        color: white;
         font-weight: 400;
         font-size: 20px;
         text-decoration: none;
-        padding: 10px;
+        margin: 0px 40px 0px 40px;
+        align-content: center;
+
     }
 }
 
 .intro {
-    margin: auto; 
+    margin: 50px auto 50px auto; 
     &__header {
         font-size: 80px;
         font-weight: 400;
+        padding: 10px;
+        margin: 0px;
         @media only screen and (min-width: ($mobile + 1px)) {
-            font-size: 128px;
-            margin: 0px;
+            font-size: 6vw;
+            margin: 50px auto 50px auto;
         }
     }
     @media only screen and (min-width: ($mobile + 1px)){
-        height: 375 px;
-        width: 1346px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: auto;
-        margin-top: 80px;
-        margin-bottom: 80px;
-        &--p1 {
-            height: 128px;
-            width: 615px;
-            margin-left: 0px;
+        &__para {
+            margin: 20px 400px 20px ;
+            font-size: 18pt;
+            font-weight: 300;
+            line-height: 50px;
         }
     }  
 }
@@ -93,29 +99,34 @@ p {
 .about {
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
     @media only screen and (min-width: ($mobile + 1px)){
         display: flex;
         flex-direction: column;
-        height: 500px;
+        height: 750px;
         width:1200px
     }
     &__heading{
         order: 1;
         width: 800px;
         height: 60px;
+        margin: 0px 0px 40px 0px;
+        text-align: center;
     }
     &__para{
         order: 3;
         @media only screen and (min-width: ($mobile + 1px)) {
             order: 2;    
             width: 800px;
-            // flex: 1;
+        }
+        &__text {
+            line-height: 35px;
+            text-align: center;
         }
     }
     &__img {
-        display: flex;
-        place-content: center;
+        margin: auto;
         order: 2;
         @media only screen and (min-width: ($mobile + 1px)) {
             place-content: center;
@@ -125,6 +136,7 @@ p {
     }
     &__prof-img {
         max-height: 401.4px;
+        box-shadow: 5px 5px 10px grey;
         @media only screen and (min-width: ($mobile + 1px)) {
             height: 558px;
         }
@@ -133,14 +145,18 @@ p {
 
 .skills {
     text-align: center;
+    background-image: url(./content/backgroundskills.jpg);
+    color: white;
+    margin: 20px;
+    padding: 20px;
     &__icons {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         @media only screen and (min-width: ($mobile + 1px)) {
             justify-content: space-around;
-            margin-left: 300px;
-            margin-right: 300px;
+            margin-left: 10%;
+            margin-right: 10%;
         }
         &__icon {
             height: 67px;
@@ -149,8 +165,8 @@ p {
             display: flex;
             justify-content: center;
             font-family: "Inter", sans-serif;
-            font-size: 20px;
-            font-weight: 700;
+            font-size: 16px;
+            font-weight: 400;
             margin-top: 20px;
         }
     }
@@ -166,19 +182,34 @@ p {
             display: flex;
             justify-content: center;
         }
+        &__project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         &__img{
             height: 165px;
-                width: 250px;
-                font-size: 32px;
+            width: 250px;
+            font-size: 32px;
+            border-radius: 30px;
+            box-shadow: 10px 5px 10px grey;
         }
         &__cptn {
-            display: flex;
+            display: grid;
+            grid-template-columns: 150px 40px 40px;
+            width: 270px;
             align-items: center;
             justify-content: space-evenly;
             font-size: 28px;
+            margin: 15px auto auto auto;
         }
         &__icon {
             height: 20px;
+        }
+        &__paragraph{
+            grid-column: span 3;
+            margin: 10px 0px;
+            font-size: 12pt;
         }
     }
 }
@@ -188,7 +219,7 @@ p {
     flex-direction: column;
     align-items: center;
     &__header {
-    font-size: 80px;
+    font-size: 60px;
         line-height: 96px;
         text-align: center;
         @media only screen and (min-width: ($mobile + 1px)) {
@@ -196,32 +227,18 @@ p {
             line-height: 153px;
         }
     }
-    &__link {
-        color: black;
-        font-weight: 700;
-        font-size: 18px;
-        border: 2px solid black;
-        text-decoration: none;
-        padding: 10px 30px;
-        margin-bottom: 80px;
-        @media only screen and (min-width: ($mobile + 1px)) {
-            font-size: 24px;
-            padding: 10px 80px;
-        }
-    }
 }
 
 .footer {
-    background-color: black;
-    height: 114px;
+    background-image: url(./content/backgroundskills2.jpg);
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    @media only screen and (min-width: ($mobile + 1px)){
-        justify-content: flex-end;
-    }
+
     &__img {
-        height: 55px;
+        height: 75px;
         margin: 10px;
+        margin: 5px 30px;
     }
 }

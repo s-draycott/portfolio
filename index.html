@@ -4,110 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
-    
+    <link rel="icon" href="./content/head-icon.png"/>
     <title>Sally Draycott - Portfolio</title>
 </head>
 <body>
     <header class="banner">
         <div class="banner__name">SALLY DRAYCOTT</div>
         <nav class="banner__nav">
-            <a class="banner__navbtn" href="">About</a>
-            <a class="banner__navbtn" href="">Portfolio</a>
-            <a class="banner__navbtn" href="">Contact</a>
+            <a class="banner__navbtn" href="#about">About</a>
+            <a class="banner__navbtn" href="#skills">Skills</a>
+            <a class="banner__navbtn" href="#portfolio">Portfolio</a>
+            <a class="banner__navbtn" href="#contact">Contact</a>
         </nav>
     </header>
     <section class="intro">
-        <h1 class="intro__header">Junior Software Developer</h1>
-        <p>
-            Junior full stack developer with over 1 weeks experience. A self-motivated, highly competent, meticulous and creative individual with the capacity to handle multiple projects simultaneously. A strong scientific expertise with specialisms in nutrition, cardiac, vascular and molecular biology that has developed key skills such as integrity, critical thinking, data analysis and communication of complex topics to a wide variety of audiences.
+        <h1 class="intro__header">Junior Full-Stack Developer</h1>
+        <p class="intro__para">
+            Junior full-stack developer working with _nology. A self-motivated, highly competent, meticulous and creative individual with the capacity to handle multiple projects simultaneously. A strong background in science has developed key skills such as integrity, critical thinking, data analysis and communication of complex topics to a wide variety of audiences.
         </p>   
     </section>
-    <section class="about">
+    <section id="about" class="about">
         <h2 class="about__heading">ABOUT</h2>
         <div class="about__para">
-            <p>
-                I have over 10 years of experience within the scientific research field. I completed a PhD in the field of molecular biology, specifically researching the effects of diet during pregnancy on offspring obesity and metabolic disease risk. More recently I have worked on a British Heart Foundation funded project looking at genetic risk factors for coronary artery disease.  <br><br>I am now looking to transition into a software and web development position and have recently started training with _nology.
+            <p class="about__para__text">
+                I have over 10 years of experience working within scientific research with a PhD in the field of molecular biology. This was a collaborative PhD between the University of Nottingham and the University of Adelaide. As such, I spent 2 years in each country, building cross continental relationships whilst enjoying the wine of the South Australia!
+            </p>
+            <p class="about__para__text">    
+                More recently I have worked on a British Heart Foundation funded project at the University of Oxford. This research identified and investigated genetic risk factors for coronary artery disease. 
+            </p>
+            <p class="about__para__text">
+                Throughout my career I have had a passion for data analysis, handling and interpretation. This, alongside a continued passion for learning, has resulted in me striving to upskill in these areas, most recently through the _nology Pathway-to-Tech programme.
+            </p>
+            <p class="about__para__text">
+                If a conversation starter is what you're looking for, my other passions include carpentry, graphic design, scuba diving, indoor rock-climbing and clay pigeon shooting.
             </p>
         </div>
         <div class="about__img">
             <img class="about__prof-img" src="./content/draycott.jpg" alt="Profile Image">
         </div>
     </section>
-    <section class="skills">
+    <div id="skills" class="skills">
         <h2>SKILLS</h2>
-        <p>   
-        </p>
             <div class="skills__icons">
                 <figure>
-                    <img class="skills__icons__icon" src="content/github-brands-solid.svg" alt="Git icon">
+                    <img class="skills__icons__icon" src="content/github.svg" alt="Git icon">
+                    <figcaption class="skills__icons__cptn">Github</figcaption>
+                </figure>
+                <figure>
+                    <img class="skills__icons__icon" src="content/git-alt-brands-solid.svg" alt="Git icon">
                     <figcaption class="skills__icons__cptn">Git</figcaption>
                 </figure>
                 <figure>
-                    <img class="skills__icons__icon" src="content/html5-brands-solid.svg" alt="HTML5 icon">
+                    <img class="skills__icons__icon" src="content/html5-brands-solid (1).svg" alt="HTML5 icon">
                     <figcaption class="skills__icons__cptn">HTML5</figcaption>
                 </figure>
                                 <figure>
-                    <img class="skills__icons__icon" src="content/css3-alt-brands-solid.svg" alt="CSS3 icon">
-                    <figcaption class="skills__icons__cptn">CSS3</figcaption>
+                    <img class="skills__icons__icon" src="content/css-brands-solid.svg" alt="CSS3 icon">
+                    <figcaption class="skills__icons__cptn">CSS</figcaption>
                 </figure>
                 <figure>
-                    <img class="skills__icons__icon" src="content/js-brands-solid.svg" alt="JavaScript icon">
+                    <img class="skills__icons__icon" src="content/js-brands-solid (1).svg" alt="JavaScript icon">
                     <figcaption class="skills__icons__cptn">JavaScript</figcaption>
                 </figure>
                 <figure>
-                    <img class="skills__icons__icon" src="content/sass-brands-solid.svg" alt="SASS icon">
+                    <img class="skills__icons__icon" src="content/sass-brands-solid (1).svg" alt="SASS icon">
                     <figcaption class="skills__icons__cptn">SCSS</figcaption>
                 </figure>
                 <figure>
-                    <img class="skills__icons__icon" src="content/react-brands-solid.svg" alt="React icon">
-                    <figcaption class="skills__icons__cptn">React</figcaption>
-                </figure>
-                <figure>
-                    <img class="skills__icons__icon" src="content/java-brands-solid.svg" alt="Java icon">
+                    <img class="skills__icons__icon" src="content/java-brands-solid (1).svg" alt="React icon">
                     <figcaption class="skills__icons__cptn">Java</figcaption>
                 </figure>
                 <figure>
-                    <img class="skills__icons__icon" src="content/r-solid.svg" alt="R icon">
+                    <img class="skills__icons__icon" src="content/r-solid (1).svg" alt="Java icon">
                     <figcaption class="skills__icons__cptn">R</figcaption>
                 </figure>
+                <figure>
+                    <img class="skills__icons__icon" src="content/AI.svg" alt="R icon">
+                    <figcaption class="skills__icons__cptn">Illustrator</figcaption>
+                </figure>
             </div>
-    </section>
-    <section class="portfolio">
+        </div>
+    <section id="portfolio" class="portfolio">
         <h2>PORTFOLIO</h2>
         <div class="portfolio__container">    
             <figure class="portfolio__container__project">
-                <img class="portfolio__container__img" src="content/project.svg" alt="Project icon">
-                <figcaption class="portfolio__container__cptn">Project 1
-                    <img class="portfolio__container__icon" src="content/eye-solid.svg">
-                    <img class="portfolio__container__icon" src="content/code-solid.svg">
+                <a href="https://s-draycott.github.io/game-challenge/" target="_blank">
+                   <img class="portfolio__container__img" src="content/rapid-type2.png" alt="Project icon"> 
+                </a>
+                <figcaption class="portfolio__container__cptn">Rapid-Type
+                    <a href="https://s-draycott.github.io/game-challenge/" target="_blank">
+                      <img class="portfolio__container__icon" src="content/eye-solid.svg"/>
+                    </a>
+                    <a href="https://github.com/s-draycott/game-challenge" target="_blank">
+                        <img class="portfolio__container__icon" src="content/code-solid.svg"/>
+                    </a>
+                    <p class="portfolio__container__paragraph">
+                        This project focussed mainly on the use of TypeScript to create a fun, interactive and user friendly game.
+                    </p>
                 </figcaption>
             </figure>
             <figure class="portfolio__container__project">
-                <img class="portfolio__container__img" src="content/project.svg" alt="Project icon">
-                <figcaption class="portfolio__container__cptn">Project 2
-                    <img class="portfolio__container__icon" src="content/eye-solid.svg">
-                    <img class="portfolio__container__icon" src="content/code-solid.svg">
-                </figcaption>
-            </figure>
-            <figure class="portfolio__container__project">
-                <img class="portfolio__container__img" src="content/project.svg" alt="Project icon">
-                <figcaption class="portfolio__container__cptn">Project 3
-                    <img class="portfolio__container__icon" src="content/eye-solid.svg">
-                    <img class="portfolio__container__icon" src="content/code-solid.svg">
-                </figcaption>
-            </figure>
-            <figure class="portfolio__container__project">
-                <img class="portfolio__container__img" src="content/project.svg" alt="Project icon">
-                <figcaption class="portfolio__container__cptn">Project 4
-                    <img class="portfolio__container__icon" src="content/eye-solid.svg">
-                    <img class="portfolio__container__icon" src="content/code-solid.svg">
+                <a href="https://s-draycott.github.io/to-do-list/" target="_blank">
+                    <img class="portfolio__container__img" src="./content/to-do-list.png" alt="Project Icon">
+                </a>
+                <figcaption class="portfolio__container__cptn">To Do List
+                    <a href="https://s-draycott.github.io/to-do-list/" target="_blank">
+                        <img class="portfolio__container__icon" src="content/eye-solid.svg" />
+                    </a>
+                    <a href="https://github.com/s-draycott/to-do-list" target="_blank">
+                        <img class="portfolio__container__icon" src="content/code-solid.svg" />
+                    </a>
+                    <p class="portfolio__container__paragraph">
+                        A timed test project aimed to return a functional to do list programme using APIs. 
+                    </p>
                 </figcaption>
             </figure>
         </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
         <h3 class="contact__header">Get in touch.</h3>
-        <a class="contact__link" href="">CONTACT</a>
     </section>
     <footer class="footer">
         <a href="https://www.linkedin.com/in/sally-draycott" target="_blank">
